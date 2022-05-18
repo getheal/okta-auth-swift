@@ -12,7 +12,7 @@
 
 import Foundation
 
-public protocol OktaFactorResultProtocol: class {
+public protocol OktaFactorResultProtocol: AnyObject {
     func handleFactorServerResponse(response: OktaAPIRequest.Result,
                                     onStatusChange: @escaping (_ newStatus: OktaAuthStatus) -> Void,
                                     onError: @escaping (_ error: OktaError) -> Void)
